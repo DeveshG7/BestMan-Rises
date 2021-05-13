@@ -35,7 +35,7 @@ function setup(){
         for(var i=0; i<maxDrops; i++){ 
             drops.push(new Drop(random(0,400), random(0,400)));
             }
-       theme.play(); 
+      
     }
        
 }
@@ -43,6 +43,8 @@ function setup(){
 function draw(){
  Engine.update(engine);
     background(0);
+ 
+  theme.loop(); 
  
      umbrella.display();
  
